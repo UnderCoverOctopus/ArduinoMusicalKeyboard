@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacitive Sensor Videos with Scrollbar</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll; /* Ensures scroll bar appears */
+      height: 100vh; /* Full viewport height */
+      box-sizing: border-box;
+    }
+
+    /* Container for videos */
+    .video-container {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Style for video elements */
+    video {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Scrollable container */
+    .scroll-wrapper {
+      max-height: 100vh;
+      overflow-y: auto; /* Enables scrolling */
+    }
+  </style>
+</head>
+<header>
+    Welcome to the Video Page!
+</header>
+<body>
+
+  <div class="scroll-wrapper">
+    <div class="video-container">
+      <h1>Capacitive Sensor Videos</h1>
+
+      <!-- First video: OneCapacitiveSensor -->
+      <h2>One Capacitive Sensor</h2>
+      <p> This is one capacitative touch sensor with two LEDs. </p>
+      <video controls>
+        <source src="/RawVideos/OneCapacitiveTouch.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Second video: TwoCapacitiveSensor -->
+      <h2>Two Capacitive Sensor</h2>
+      <p>This is two capacitative sensors with each sensor controlling one of the two LEDs</p>
+      <video controls>
+        <source src="RawVideos/TwoCapacitiveTouch.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+</body>
+</html>
